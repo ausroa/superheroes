@@ -5,12 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class SearchService {
   heroSearch: string;
+  didSearch = false;
 
   constructor() { }
 
   onSearch(heroSearch: string) {
     this.heroSearch = heroSearch;
-    console.log(heroSearch);
-
+    this.didSearch = true;
+    console.log(heroSearch, this.didSearch);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HeroDataService} from '../../shared/hero-data.service';
 import {Hero} from './hero.model';
 
