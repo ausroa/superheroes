@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <input type="text"
+           #heroSearch>
+    <button class="btn btn-success"
+    (click)="onSearch(heroSearch.value)">
+      Search
+    </button>
+  </div>
+</div>
+<hr>
+<app-hero-detail></app-hero-detail>
+

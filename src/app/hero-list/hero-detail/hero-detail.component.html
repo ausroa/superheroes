@@ -1,0 +1,21 @@
+<div class="row" id="heroList">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <a href="#"
+         class="list-group-item"
+         style="cursor: pointer"
+         *ngFor="let hero of heroes"
+         appHeroLinkColor>
+        Name: {{ hero.name }}
+        <img src="{{ hero.image }}" alt=""><br>
+        Intelligence: {{ hero.intelligence }}<br>
+        Strength: {{ hero.strength }}<br>
+        Speed: {{ hero.speed }}<br>
+        Durability: {{ hero.durability }}<br>
+        Power: {{ hero.power }}<br>
+        Combat: {{ hero.combat }}
+      </a>
+    </ul>
+  </div>
+</div>
+
