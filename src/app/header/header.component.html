@@ -9,10 +9,17 @@
     <div class="navbar-default">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">
+          <a [routerLink]="['/compare']">
             Compare
           </a>
         </li>
+				<li>
+					<a
+					style="cursor: pointer"
+					(click)="onLoadHeroes()">
+						Search Heroes
+					</a>
+				</li>
       </ul>
     </div>
   </div>

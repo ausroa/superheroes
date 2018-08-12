@@ -6,3 +6,7 @@ input {
 button {
   vertical-align: bottom;
 }
+
+#searchHeroes {
+	text-align: center;
+}
