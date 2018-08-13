@@ -19,6 +19,6 @@ export class CompareComponent implements OnInit {
   }
 
 	compareHeroes() {
-		console.log(this.heroes);
+		
 	}
 }

@@ -8,6 +8,7 @@ import {Hero} from './hero.model';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
+	heroSearchResults: any[];
   heroes: Hero [] = [];
 	heroes2: Hero [] = [];
 
@@ -18,4 +19,5 @@ export class HeroDetailComponent implements OnInit {
 		this.heroes2 = this.heroService.heroes2;
   }
 
+	
 }

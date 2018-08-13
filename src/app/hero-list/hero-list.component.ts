@@ -19,7 +19,7 @@ export class HeroListComponent implements OnInit {
   }
 
   onSearch(heroSearch: string) {
-    this.searchService.onSearch(heroSearch);
+    this.heroService.getHero(heroSearch);
     this.didSearch = true;
   }
 }

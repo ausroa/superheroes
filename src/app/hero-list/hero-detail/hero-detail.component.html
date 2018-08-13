@@ -1,4 +1,4 @@
-<div class="row" id="heroList">
+<!-- <div class="row" id="heroList">
   <div class="col-xs-12">
     <ul class="list-group">
       <a href="#"
@@ -31,4 +31,20 @@
 			</a>
     </ul>
   </div>
+</div> -->
+<div>
+	<ul class="list-group">
+		<li class="list-group-item">
+			<a href="#"
+			*ngFor="let heroSearch of heroesSearch">
+				<p>{{ heroSearch.name }}</p>
+				<p>{{ heroSearch.combat }}</p>
+				<p>{{ heroSearch.durability }}</p>
+				<p>{{ heroSearch.intelligence }}</p>
+				<p>{{ heroSearch.power }}</p>
+				<p>{{ heroSearch.speed }}</p>
+				<p>{{ heroSearch.strength }}</p>
+			</a>
+		</li>
+	</ul>
 </div>

@@ -8,10 +8,9 @@ export class SearchService {
   heroSearch: string;
   didSearch = false;
 
-  constructor(private heroData: HeroDataService) { }
+  constructor(private heroService: HeroDataService) { }
 
   onSearch(heroSearch: string) {
-    this.heroSearch = heroSearch;
-    this.didSearch = true;
+    return this.heroService.getHero(heroSearch);
   }
 }
