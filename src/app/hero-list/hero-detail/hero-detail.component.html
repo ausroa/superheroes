@@ -1,7 +1,6 @@
 <div class="row" id="heroList">
   <div class="col-xs-12">
     <ul class="list-group">
-
       <a href="#"
          class="list-group-item"
          style="cursor: pointer"
@@ -16,7 +15,20 @@
         Power: {{ hero.power }}<br>
         Combat: {{ hero.combat }}
       </a>
+			<a href="#"
+				class="list-group-item"
+				style="cursor: pointer"
+				*ngFor="let hero2 of heroes2"
+				appHeroLinkColor>
+				Name: {{ hero2.name }}
+        <img src="{{ hero2.image }}" alt=""><br>
+        Intelligence: {{ hero2.intelligence }}<br>
+        Strength: {{ hero2.strength }}<br>
+        Speed: {{ hero2.speed }}<br>
+        Durability: {{ hero2.durability }}<br>
+        Power: {{ hero2.power }}<br>
+        Combat: {{ hero2.combat }}
+			</a>
     </ul>
   </div>
 </div>
-

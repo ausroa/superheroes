@@ -9,11 +9,13 @@ import {Hero} from './hero.model';
 })
 export class HeroDetailComponent implements OnInit {
   heroes: Hero [] = [];
+	heroes2: Hero [] = [];
 
   constructor(private heroService: HeroDataService) { }
 
   ngOnInit() {
     this.heroes = this.heroService.heroes;
+		this.heroes2 = this.heroService.heroes2;
   }
 
 }

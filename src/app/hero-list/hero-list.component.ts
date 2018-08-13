@@ -9,7 +9,6 @@ import { HeroDataService } from '../shared/hero-data.service';
   styleUrls: ['./hero-list.component.css']
 })
 export class HeroListComponent implements OnInit {
-	heroes: any[];
   didSearch = false;
 
   constructor(private searchService: SearchService,

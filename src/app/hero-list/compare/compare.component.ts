@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero-detail/hero.model';
+import { HeroDataService } from '../../shared/hero-data.service';
 
 @Component({
   selector: 'app-compare',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./compare.component.css']
 })
 export class CompareComponent implements OnInit {
+	heroes: Hero [] = [];
+	heroes2: Hero [] = [];
 
-  constructor() { }
+  constructor(private heroService: HeroDataService) { }
 
   ngOnInit() {
+		this.heroes = this.heroService.heroes;
+		this.heroes2 = this.heroService.heroes2;
   }
 
+	compareHeroes() {
+		console.log(this.heroes);
+	}
 }
