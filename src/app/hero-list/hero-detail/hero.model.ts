@@ -1,17 +1,19 @@
 export class Hero {
-  public name;
-  public intelligence;
-  public strength;
-  public speed;
-  public durability;
-  public power;
-  public combat;
-  public image;
+  public name: string;
+	public id: number;
+  public intelligence: number;
+  public strength: number;
+  public speed: number;
+  public durability: number;
+  public power: number;
+  public combat: number;
+  public image: string;
 
-  constructor(name: string, intelligence: number, strength: number,
+  constructor(name: string, id: number, intelligence: number, strength: number,
               speed: number, durability: number, power: number, combat: number,
               image: string) {
     this.name = name;
+		this.id = id;
     this.strength = strength;
     this.intelligence = intelligence;
     this.speed = speed;

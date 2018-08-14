@@ -1,12 +1,14 @@
-<!-- <div class="row" id="heroList">
+<div class="row" id="heroList">
   <div class="col-xs-12">
     <ul class="list-group">
       <a href="#"
+				 [routerLink]="['/heroes', hero.id, hero.name]"
          class="list-group-item"
          style="cursor: pointer"
          *ngFor="let hero of heroes"
          appHeroLinkColor>
-        Name: {{ hero.name }}
+        Name: {{ hero.name }}<br>
+				id: {{ hero.id }}
         <img src="{{ hero.image }}" alt=""><br>
         Intelligence: {{ hero.intelligence }}<br>
         Strength: {{ hero.strength }}<br>
@@ -16,11 +18,13 @@
         Combat: {{ hero.combat }}
       </a>
 			<a href="#"
-				class="list-group-item"
-				style="cursor: pointer"
-				*ngFor="let hero2 of heroes2"
-				appHeroLinkColor>
-				Name: {{ hero2.name }}
+				 [routerLink]="['/heroes', hero2.id, hero2.name]"
+				 class="list-group-item"
+				 style="cursor: pointer"
+				 *ngFor="let hero2 of heroes2"
+				 appHeroLinkColor>
+				Name: {{ hero2.name }}<br>
+				id: {{ hero2.id }}
         <img src="{{ hero2.image }}" alt=""><br>
         Intelligence: {{ hero2.intelligence }}<br>
         Strength: {{ hero2.strength }}<br>
@@ -31,13 +35,20 @@
 			</a>
     </ul>
   </div>
-</div> -->
+</div>
+
+<!-- <button class="btn btn-primary"
+(click)="reloadPage()">
+	Reload Page
+</button>
 <div>
 	<ul class="list-group">
 		<li class="list-group-item">
 			<a href="#"
+			[routerLink]="['/heroes']"
 			*ngFor="let heroSearch of heroesSearch">
 				<p>{{ heroSearch.name }}</p>
+				<p>{{ heroSearch.id }}</p>
 				<p>{{ heroSearch.combat }}</p>
 				<p>{{ heroSearch.durability }}</p>
 				<p>{{ heroSearch.intelligence }}</p>
@@ -47,4 +58,6 @@
 			</a>
 		</li>
 	</ul>
-</div>
+</div> -->
+<app-hero-description
+*ngIf="didsearch"></app-hero-description>

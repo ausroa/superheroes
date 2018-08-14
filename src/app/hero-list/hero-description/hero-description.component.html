@@ -1,3 +1,10 @@
-<p>
-  hero-description works!
-</p>
+<p>Hero ID: {{ hero.id }}</p>
+<p>Hero Name: {{ hero.name }}</p>
+<hr>
+<a [routerLink]="['/heroes', 10, 'Brian Oconnor']">
+Load Brian (10)
+</a>
+<br>
+<a [routerLink]="['/heroes', 12, 'Mark']">
+Load Mark (12)
+</a>

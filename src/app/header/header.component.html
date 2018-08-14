@@ -20,6 +20,14 @@
 						Search Heroes
 					</a>
 				</li>
+				<li>
+					<a
+						*ngFor="let hero of heroes"
+						style="cursor: pointer"
+						(click)="onLoadDetails(hero.id)">
+						Load Details
+					</a>
+				</li>
       </ul>
     </div>
   </div>

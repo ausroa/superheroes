@@ -10,5 +10,12 @@
   </div>
 </div>
 <hr>
+<button class="btn btn-primary"
+[routerLink]="['/heroes', 10, 'details']"
+[queryParams]="{allowDetails: '1'}"
+fragment="loading">
+	Load Hero Detail
+</button>
+<router-outlet></router-outlet>
 <app-hero-detail
 *ngIf="didSearch"></app-hero-detail>
